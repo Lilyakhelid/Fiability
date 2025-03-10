@@ -1,0 +1,8 @@
+hydraulic_model:
+  L: 5000  # Longueur du tronçon (m) --fixe--
+  B: 300   # Largeur moyenne de la rivière (m) --fixe--
+  Ks: 30   # Coefficient de Strickler (rugosité du lit)
+  Zm: 55   # Cote du fond en amont (m NGF)
+  Zv: 50   # Cote du fond en aval (m NGF)
+  Zb: 55.5 # Cote de la berge (m NGF) - avant la digue --fixe--
+  hd: 6.17 # Hauteur de la digue estimée (m) - issue de l'analyse des crues

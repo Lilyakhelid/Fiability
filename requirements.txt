@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+seaborn
+openpyxl  # Pour lire les fichiers Excel
+scipy  
+statsmodels 
+scikit-learn  
+plotly
+nbformat>=4.2.0
+pyyaml
