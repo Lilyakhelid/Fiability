@@ -37,11 +37,11 @@ def get_optimal_digue_height(df, percentile=0.95):
     Calcule la hauteur de digue protégeant contre un pourcentage donné des crues.
     Args:
         df (pd.DataFrame): Données nettoyées.
-        percentile (float): Seuil de protection (ex: 0.95 pour 95%).
+        percentile (float): Seuil de protection , par defaut 0.95 pour 95%.
     Returns:
         float: Hauteur optimale de la digue.
     """
-    return df["Hauteur"].quantile(percentile)
+    return df["Hauteur"].quantile(percentile) #revoir sa pertinence
 
 def visualize_distribution_with_threshold(df, hauteur_opt):
     """
@@ -53,7 +53,7 @@ def visualize_distribution_with_threshold(df, hauteur_opt):
     fig = px.histogram(df, x="Hauteur", nbins=20, title="Distribution des hauteurs de crue avec seuil optimal",
                        labels={"Hauteur": "Hauteur de crue (m)"}, opacity=0.7)
     
-    # Ajouter la ligne verticale pour la hauteur optimale
+    #ligne verticale pour la hauteur optimale
     fig.add_vline(x=hauteur_opt, line_dash="dash", line_color="red",
                   annotation_text=f"Hauteur optimale: {hauteur_opt:.2f} m", annotation_position="top right")
 
@@ -80,7 +80,7 @@ def visualize_time_series(df):
                   labels={"Annee": "Année", "Hauteur": "Hauteur de crue (m)"})
     fig.show()
 
-
+#----yaml----
 def load_hydraulic_params():
     """
     Charge les paramètres hydrauliques depuis le fichier YAML.
