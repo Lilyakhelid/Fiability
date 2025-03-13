@@ -127,3 +127,12 @@ def load_hydraulic_params():
         params = yaml.safe_load(file)
     return params["hydraulic_model"]
 
+def load_economic_params():
+    """
+    Charge les paramètres hydrauliques depuis le fichier YAML.
+    Returns:
+        dict: Paramètres du modèle hydraulique.
+    """
+    with open(CONFIG_PATH, "r") as file:
+        params = yaml.safe_load(file)
+    return params["economic_model"]

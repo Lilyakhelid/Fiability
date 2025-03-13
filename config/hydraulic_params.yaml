@@ -9,3 +9,10 @@ hydraulic_model:
 
   H_IC_95: [1.19, 4.03]  # Intervalle de confiance 95% pour H
   S_IC_95: [-10.72, -7.36]  # Intervalle de confiance 95% pour S
+
+economic_model:
+  C0: 500000   # Coût de construction (€ par m de hauteur)
+  alpha: 1.3   # Exposant du coût de construction
+  Cm0: 0.01    # Coût de maintenance = 1% du coût d’investissement
+  T: 30        # Durée d’étude (années)
+
