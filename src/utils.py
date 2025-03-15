@@ -4,7 +4,6 @@ import plotly.express as px
 import os
 import yaml
 import numpy as np
-import scipy.stats as stats
 import plotly.figure_factory as ff
 import plotly.graph_objects as go
 
